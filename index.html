@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <div class="header">
+    <header class="header">
       <div class="nav">
         <div class="container">
             <div class="navbar">
+
+              <div class="left">
           <div class="flipkart-logo">
             <img src="images/flipkart-logo.png" />
           <div class="flipkart-plus">  
@@ -20,12 +24,42 @@
               </a>
           </div>
           </div>
+
           <div class="search">
-            <input type="text" placeholder="Search.." name="search">
+            <div class="main">
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search for products, brand and more">
+              </div>
+            </div>
           </div>
+            </div>
+
+
+
+          <div class="right">
+          <div class="login-btn">
+            <a href="login.html">Login</a>
+          </div>
+
+          <div class="more">
+            <a href="more.html">More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </div>
+      
+        <div class="cart">
+          <a href="cart.html">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> 
         </div>
-    </div>
       </div>
+
+
     </div>
+    </div>
+
+    </div>
+  </header>
+ 
+
+
+
   </body>
 </html>
