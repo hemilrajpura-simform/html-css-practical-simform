@@ -152,3 +152,29 @@ section#top-items {
 .top-item:hover .fa-angle-down {transform: rotate(180deg); }
 
 /* top offers section ends */
+
+
+/* deals of the day section start */
+section#deals-of-the-day-section {
+    padding: 20px 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%); 
+    font-family: Roboto,Arial,sans-serif;
+
+}
+.deals-of-the-day  .deals {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+.deals-of-the-day p { font-size: 22px; font-weight: 500; }
+.deals-of-the-day > .title{ font-weight: 600; padding: 0 0 17px 0; }
+.title .timer { font-weight: lighter; font-size: 15px; padding: 0 0 23px 0; }
+.title .fa-clock-o{ font-size: 21px; font-weight: lighter; padding: 0 10px;  }
+
+.deals-of-the-day .deals-item{ /* height: 150px; */     max-width: 166px;
+    text-align: center; }
+    .deals-of-the-day img{  height: 150px;}
+ .deals-item .deals-title{ font-size: 14px; font-weight: 500; margin-top: 15px; }
+ .deals-item .deals-offer{ font-size: 14px; color: #388e3c; padding-top: 8px; }
+ .deals-item .deals-line{ opacity: .6; font-size: 13px; padding-top: 7px; }
+/* deals of the day section end */
