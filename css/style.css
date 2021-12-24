@@ -1,180 +1,271 @@
-*{
-    margin: 0; padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-a { text-decoration: none; display: inline-block; }
+a {
+  text-decoration: none;
+  display: inline-block;
+}
 .container {
-    margin: 0 auto;
-    max-width: 1272px;
+  margin: 0 auto;
+  max-width: 1272px;
 }
 
-body{
-    font-family: Roboto,Arial,sans-serif;
-    letter-spacing: 0;
+body {
+  font-family: Roboto, Arial, sans-serif;
+  letter-spacing: 0;
 }
 
-.nav{
-    background-color: #2874f0; 
-    width: 100%; 
-    padding: 7px 0 7px 0;
+.nav {
+  background-color: #2874f0;
+  width: 100%;
+  padding: 7px 0 7px 0;
 }
 .flipkart-logo {
-    display: flex; 
-    justify-content: space-between;
-    flex-direction: column; margin-right: 24px;
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 24px;
 }
 .flipkart-logo > img {
-    width: 75px;
+  width: 75px;
 }
-.flipkart-logo a{
-text-decoration: none; display: inline-block;
+.flipkart-logo a {
+  text-decoration: none;
+  display: inline-block;
 }
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 .flipkart-plus {
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: auto;
 }
 
-#explore{ font-size: 11px; color: white; font-style: italic; }
-#plus{ font-size: 11px; color: #ffe500; font-style: italic; margin-left: -2px; font-weight: 600; }
-.flipkart-plus-logo{   
-    width: 10px;
+#explore {
+  font-size: 11px;
+  color: white;
+  font-style: italic;
+}
+#plus {
+  font-size: 11px;
+  color: #ffe500;
+  font-style: italic;
+  margin-left: -2px;
+  font-weight: 600;
+}
+.flipkart-plus-logo {
+  width: 10px;
 }
 
 .search > input[type="text"] {
- /*   border: none;
+  /*   border: none;
     border-radius: 2px;
     height: 34px;
     width: 313px; */
 }
 
-
 /* Styles for wrapping the search box */
 
 .main {
-   /* width: 50%;
+  /* width: 50%;
     margin: 50px auto; */
 }
 
 /* Bootstrap 4 text input with search icon */
 
-.navbar > .left{
-    width: 70%;
-    float: left;
-    justify-content: center;
-    display: flex;
+.navbar > .left {
+  width: 70%;
+  float: left;
+  justify-content: center;
+  display: flex;
 }
-.navbar > .right{
-    width: 30%;
-    float: right;
-    justify-content: space-evenly;
-    display: flex;
-    align-items: center;
+.navbar > .right {
+  width: 30%;
+  float: right;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
 }
 
 .has-search .form-control {
-    padding-left: 2.375rem;
-    display: block;
-    width: 81%;
-    height: calc(1.25rem + 2px);
-    padding: 0.5rem 3.75rem 0.5rem 7.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #dbdbdb;
-    border-radius: 0.10rem;
-    transition: .15s ease-in-out,box-shadow .15s ease-in-out;
-
+  padding-left: 2.375rem;
+  display: block;
+  width: 81%;
+  height: calc(1.25rem + 2px);
+  padding: 0.5rem 3.75rem 0.5rem 7.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.1rem;
+  transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .has-search .form-control-feedback {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    width: 59.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #2874f0;
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 59.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #2874f0;
 }
 
 .login-btn > a {
-    color: #2874f0 !important;
-    background-color: white;
-    padding: 5px 40px;
-    text-decoration: none;
-    border: 1px solid #dbdbdb;
-    font-weight: 600;
-    display: inline-block;
+  color: #2874f0 !important;
+  background-color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+  border: 1px solid #dbdbdb;
+  font-weight: 600;
+  display: inline-block;
 }
-.right a{
-    text-decoration: none;
-    color:white; font-weight: 500;
-    display: inline-block;
+.right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: inline-block;
 }
-.more > .fa-angle-down { color: white;  }
-.more {transform: rotate(0deg); transition: transform 2s; transition-duration: 3s;}
-.more:hover .fa-angle-down {transform: rotate(180deg); }
-.cart > .fa-shopping-cart { color: white; }  
-
-
+.more > .fa-angle-down {
+  color: white;
+}
+.more {
+  transform: rotate(0deg);
+  transition: transform 2s;
+  transition-duration: 3s;
+}
+.more:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
+.cart > .fa-shopping-cart {
+  color: white;
+}
 
 /* top offers section starts */
 
 section#top-items {
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
 }
 .top-items-main {
-    display: flex; 
-      padding: 10px 0;     justify-content: space-evenly;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-evenly;
 }
 .top-item > img {
-    height: 67px;
+  height: 67px;
 }
 .top-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
 }
-.top-item{
-
+.top-item {
 }
-.top-item .fa-angle-down { padding: 0 5px; font-weight: bold; }
-.top-item:hover .fa-angle-down {transform: rotate(180deg); }
+.top-item .fa-angle-down {
+  padding: 0 5px;
+  font-weight: bold;
+}
+.top-item:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
 
 /* top offers section ends */
 
-
 /* deals of the day section start */
 section#deals-of-the-day-section {
-    padding: 20px 0;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%); 
-    font-family: Roboto,Arial,sans-serif;
-
+  padding: 20px 0;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+  font-family: Roboto, Arial, sans-serif;
 }
-.deals-of-the-day  .deals {
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row;
+.deals-of-the-day .deals {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
 }
-.deals-of-the-day p { font-size: 22px; font-weight: 500; }
-.deals-of-the-day > .title{ font-weight: 600; padding: 0 0 17px 0; }
-.title .timer { font-weight: lighter; font-size: 15px; padding: 0 0 23px 0; }
-.title .fa-clock-o{ font-size: 21px; font-weight: lighter; padding: 0 10px;  }
+#timer-icon {
+  height: 26px;
+}
+.deals-of-the-day p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.deals-of-the-day > .title {
+  font-weight: 600;
+  padding: 0 0 17px 0;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 17px 0;
+  padding: 10px 5px 10px 5px;
+  box-shadow: 0 0px 4px 1px rgb(0 0 0 / 16%);
+}
+.title .timer {
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 0 0 23px 0;
+}
+.title .fa-clock-o {
+  font-size: 21px;
+  font-weight: lighter;
+  padding: 0 10px;
+}
+.deals-main {
+  display: flex;
+}
 
-.deals-of-the-day .deals-item{ /* height: 150px; */     max-width: 166px;
-    text-align: center; }
-    .deals-of-the-day img{  height: 150px;}
- .deals-item .deals-title{ font-size: 14px; font-weight: 500; margin-top: 15px; }
- .deals-item .deals-offer{ font-size: 14px; color: #388e3c; padding-top: 8px; }
- .deals-item .deals-line{ opacity: .6; font-size: 13px; padding-top: 7px; }
+.deals-of-the-day {
+  width: 75%; 
+  box-shadow: 0 2px 4px 1px rgb(0 0 0 / 2%);
+  padding: 5px;
+  padding: 5px 5px 10px 5px;
+}
+.advertis {
+  width: 25%;
+}
+.advertis img {
+  left: 3rem;
+  height: 312px;
+  box-shadow: 0 0px 4px 0px rgb(0 0 0);
+  position: relative;
+}
+
+.deals-of-the-day .deals-item {
+  /* height: 150px; */
+  max-width: 166px;
+  text-align: center;
+}
+.right > a {
+  padding: 10px;
+  background-color: #2874f0;
+  font-weight: bold;
+  color: white;
+}
+
+.deals-of-the-day img {
+  height: 150px;
+}
+.deals-item .deals-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.deals-item .deals-offer {
+  font-size: 14px;
+  color: #388e3c;
+  padding-top: 8px;
+}
+.deals-item .deals-line {
+  opacity: 0.6;
+  font-size: 13px;
+  padding-top: 7px;
+}
 /* deals of the day section end */
