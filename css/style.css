@@ -77,13 +77,13 @@ body {
 /* Bootstrap 4 text input with search icon */
 
 .navbar > .left {
-  width: 70%;
+  width: 60%;
   float: left;
   justify-content: center;
   display: flex;
 }
 .navbar > .right {
-  width: 30%;
+  width: 35%;
   float: right;
   justify-content: space-evenly;
   display: flex;
@@ -95,14 +95,14 @@ body {
   display: block;
   width: 81%;
   height: calc(1.25rem + 2px);
-  padding: 0.5rem 3.75rem 0.5rem 7.75rem;
+  padding: 0.4rem 11.7rem 0.4rem 0.6rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #dbdbdb;
-  border-radius: 0.1rem;
+  border-radius: 1px;
   transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -110,7 +110,7 @@ body {
   position: absolute;
   z-index: 2;
   display: block;
-  width: 59.375rem;
+  width: 62.375rem;
   height: 2.375rem;
   line-height: 2.375rem;
   text-align: center;
@@ -158,9 +158,7 @@ section#top-items {
   padding: 10px 0;
   justify-content: space-evenly;
 }
-.top-item > img {
-  height: 67px;
-}
+
 .top-item {
   display: flex;
   flex-direction: column;
@@ -168,13 +166,13 @@ section#top-items {
   font-weight: bold;
   font-size: 14px;
 }
-.top-item {
+.top-text {
 }
-.top-item .fa-angle-down {
+.top-text .fa-angle-down {
   padding: 0 5px;
   font-weight: bold;
 }
-.top-item:hover .fa-angle-down {
+.top-text:hover .fa-angle-down {
   transform: rotate(180deg);
 }
 
@@ -191,12 +189,27 @@ section#deals-of-the-day-section {
   display: flex;
   flex-direction: row;
 }
+
+
+.deals-item-img img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left {
+  align-items: center;
+  display: flex;
+}
 #timer-icon {
-  height: 26px;
+  width: 26px;
+  display: flex;
 }
 .deals-of-the-day p {
   font-size: 22px;
+  display: flex;
   font-weight: 500;
+  align-items: center;
 }
 .deals-of-the-day > .title {
   font-weight: 600;
@@ -211,7 +224,7 @@ section#deals-of-the-day-section {
 .title .timer {
   font-weight: lighter;
   font-size: 15px;
-  padding: 0 0 23px 0;
+  
 }
 .title .fa-clock-o {
   font-size: 21px;
@@ -238,9 +251,17 @@ section#deals-of-the-day-section {
 }
 
 .deals-of-the-day .deals-item {
-  /* height: 150px; */
-  max-width: 166px;
+  width: 30%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.deals-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .right > a {
   padding: 10px;
@@ -249,22 +270,28 @@ section#deals-of-the-day-section {
   color: white;
 }
 
-.deals-of-the-day img {
-  height: 150px;
-}
-.deals-item .deals-title {
+.deals-text h4 {
   font-size: 14px;
   font-weight: 500;
   margin-top: 15px;
 }
-.deals-item .deals-offer {
+.deals-text p {
   font-size: 14px;
   color: #388e3c;
   padding-top: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.deals-item .deals-line {
+.deals-text span {
   opacity: 0.6;
   font-size: 13px;
   padding-top: 7px;
+}
+.deals-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
 }
 /* deals of the day section end */
