@@ -461,6 +461,13 @@ section#deals-of-the-day-section {
   .navbar > .right {
     align-items: baseline;
   }
+  .deals-of-the-day {
+    width: 100%;
+}
+.advertis {
+
+  display: none;
+}
 
 }
 
