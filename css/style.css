@@ -1,40 +1,550 @@
-*{
-    margin: 0; padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.container{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
-.nav{
-    background-color: #2874f0; 
-    width: 100%; height: 56px;
+body {
+  font-family: Roboto, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.nav {
+  background-color: #2874f0;
+  width: 100%;
+  padding: 7px 0 7px 0;
 }
 .flipkart-logo {
-    display: grid; 
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
 }
 .flipkart-logo > img {
-    height: 100%;
-    width: 75px;
+  width: 75px;
 }
-.flipkart-logo a{
-text-decoration: none; 
+.flipkart-logo a {
+  text-decoration: none;
+  display: inline-block;
 }
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 .flipkart-plus {
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: auto;
 }
 
-#explore{ font-size: 11px; color: white; font-style: italic; }
-#plus{ font-size: 11px; color: #ffe500; font-style: italic; margin-left: -2px; font-weight: 600; }
-.flipkart-plus-logo{   
-    width: 10px;
+#explore {
+  font-size: 11px;
+  color: white;
+  font-style: italic;
+}
+#plus {
+  font-size: 11px;
+  color: #ffe500;
+  font-style: italic;
+  margin-left: -2px;
+  font-weight: 600;
+}
+.flipkart-plus-logo {
+  width: 10px;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+span.fa.fa-search.form-control-feedback {
+  position: absolute;
+  z-index: 9;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search [type="text"] {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 1rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+  max-width: 100%;
+}
+.fa-search:before {
+  color: #2874f0;
+}
+/* Styles for wrapping the search box */
+
+/* Bootstrap 4 text input with search icon */
+
+.navbar > .left {
+  justify-content: center;
+  display: flex;
+  width: 41%;
+}
+.navbar > .right {
+  width: 30%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+.login-btn > a {
+  color: #2874f0 !important;
+  background-color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+  border: 1px solid #dbdbdb;
+  font-weight: 600;
+  display: inline-block;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: inline-block;
+}
+.more > .fa-angle-down {
+  color: white;
+}
+.more {
+  transform: rotate(0deg);
+  transition: transform 2s;
+  transition-duration: 3s;
+}
+.more:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
+.cart > .fa-shopping-cart {
+  color: white;
+}
+
+/* top offers section starts */
+
+section#top-items {
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+.top-items-main {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.top-item > img {
+  width: 100%;
+}
+.top-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 11px;
+  width: 7%;
+}
+.top-item p {
+  cursor: pointer;
+}
+.top-item .fa-angle-down {
+  padding: 0 5px;
+  font-weight: bold;
+}
+/* drop down starts */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 9px 105px 15px 21px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #1a51aa;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #1a51aa;
+}
+
+#drpbtn:hover {
+  color: #1a51aa;
+}
+
+.fa-angle-down:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover .fa-angle-down {
+  transform: rotate(180deg);
+  transition-duration: 500ms, 1500ms;
+  color: #1a51aa;
+}
+.fa-angle-down {
+  cursor: pointer;
+  transition-duration: 500ms, 1500ms;
+}
+
+/* dropdown end */
+
+/* top offers section ends */
+
+/* deals of the day section start */
+section#deals-of-the-day-section {
+  padding: 20px 0;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+  font-family: Roboto, Arial, sans-serif;
+}
+.deals-of-the-day .deals {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.deals-item-img img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title .left {
+  flex-direction: column;
+  display: flex;
+}
+#timer-icon {
+  width: 26px;
+  display: flex;
+  margin: 0 10px;
+}
+.deals-of-the-day p {
+  font-size: 22px;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+}
+.deals-of-the-day h4 {
+  font-weight: lighter;
+  opacity: 0.7;
+}
+.deals-of-the-day > .title {
+  font-weight: 600;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 17px 0;
+  padding: 10px;
+  box-shadow: 0 0px 4px 1px rgb(0 0 0 / 16%);
+  align-items: center;
+}
+.title .timer {
+  font-weight: lighter;
+  font-size: 15px;
+}
+.title .fa-clock-o {
+  font-size: 21px;
+  font-weight: lighter;
+  padding: 0 10px;
+}
+.deals-main {
+  display: flex;
+}
+
+.deals-of-the-day {
+  width: 75%;
+  box-shadow: 0 2px 4px 1px rgb(0 0 0 / 2%);
+}
+.advertis {
+  width: 25%;
+}
+.advertis img {
+  left: 2rem;
+  height: 348px;
+  box-shadow: 0 0px 4px 0px rgb(0 0 0);
+  position: relative;
+}
+
+.deals-of-the-day .deals-item {
+  width: 11%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.deals-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right > a {
+  padding: 10px;
+  background-color: #2874f0;
+  font-weight: bold;
+  color: white;
+}
+
+.deals-text h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.deals-text p {
+  font-size: 14px;
+  color: #388e3c;
+  padding-top: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.deals-text span {
+  opacity: 0.6;
+  font-size: 13px;
+  padding-top: 7px;
+}
+.deals-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+#books-instru {
+  width: 100%;
+}
+/* deals of the day section end */
+
+/* books and instru start */
+.left h3 {
+  color: #7f7f7f;
+  font-weight: lighter;
+}
+#books-instru {
+  width: 100%;
+}
+/*  books and instru end */
+@media (max-width: 1279px) {
+  .container {
+    width: 1024px;
+  }
+  .deals-of-the-day .deals {
+    justify-content: flex-start;
+  }
+  .deals-of-the-day .deals-item {
+    width: 21%;
+    margin-bottom: 30px;
+  }
+  .deals-item-img {
+    min-height: 74%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 768px;
+  }
+  .deals-of-the-day .deals-item {
+    width: 25.3%;
+  }
+  .navbar > .right {
+    width: 36%;
+  }
+  .deals-of-the-day {
+    width: 65%;
+  }
+  .advertis {
+    width: 25%;
+  }
+  .top-item {
+    width: 13.9%;
+  }
+  .top-items-main {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 641px;
+  }
+  .right > a {
+    font-size: 14px;
+    text-align: center;
+    padding: 7px;
+  }
+  .deals-of-the-day p {
+    font-size: 14px;
+  }
+  .title .timer {
+    font-size: 13px;
+  }
+  .login-btn > a {
+    padding: 5px 19px;
+  }
+  .deals-of-the-day {
+    width: 73%;
+  }
+  .left h3 {
+    font-size: 14px;
+  }
+  .top-item {
+    width: 16.9%;
+  }
+  .flipkart-logo {
+    width: 19%;
+  }
+  .login-btn > a {
+    padding: 6px 21px;
+  }
+  .navbar > .left {
+    width: 37%;
+  }
+  .advertis img {
+    height: 287px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 580px;
+  }
+  .advertis img {
+    height: 215px;
+  }
+  .navbar > .right a {
+    font-size: 12px;
+  }
+  .login-btn > a {
+    padding: 2px 15px;
+  }
+  .left h3 {
+    font-size: 13px;
+  }
+  .top-item {
+    width: 19%;
+  }
+  .deals-item-img {
+    min-height: 62;
+  }
+  section#deals-of-the-day-section {
+    padding: 20px 0 70px 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    width: 375px;
+  }
+  .deals-of-the-day p {
+    font-size: 13px;
+  }
+  .flipkart-logo {
+    width: 21%;
+  }
+  .flipkart-logo > img {
+    width: 64px;
+  }
+  .navbar > .right a {
+    font-size: 10px;
+  }
+  .navbar > .right a {
+    font-size: 9px;
+  }
+  #plus {
+    font-size: 10px;
+  }
+  #explore {
+    font-size: 10px;
+  }
+  .search [type="text"] {
+    font-size: 0.6rem;
+  }
+  .top-item {
+    width: 20%;
+    margin: 4px 0;
+  }
+  .deals-of-the-day .deals-item {
+    width: 37.3%;
+  }
+  #timer-icon {
+    width: 21px;
+    margin: 0 3px;
+  }
+  .title .timer {
+    font-size: 9px;
+  }
+  .right > a {
+    padding: 5px;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .advertis img {
+    height: 130px;
+  }
+  .navbar > .left {
+    height: 100%;
+  }
+  .navbar > .right {
+    align-items: baseline;
+  }
+  .deals-of-the-day {
+    width: 100%;
+  }
+
+  .advertis {
+    display: none;
+  }
+  span.fa.fa-search.form-control-feedback {
+    right: 8px;
+    font-size: 12px;
+  }
+  .search [type="text"] {
+    padding: 5px 5px;
+  }
+  .top-item p {
+    font-size: 9px;
+  }
+  .left h3 {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 320px;
+  }
+  .navbar > .right a {
+    font-size: 7px;
+  }
 }

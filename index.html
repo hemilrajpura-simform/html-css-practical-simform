@@ -1,31 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Online Shopping Site Mobiles, Electronics,..</title>
+    <link rel="icon" type="image/png" href="images/flipkart-iconify.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
-    <div class="header">
-      <div class="nav">
+    <header class="nav">
+    
         <div class="container">
-            <div class="navbar">
-          <div class="flipkart-logo">
-            <img src="images/flipkart-logo.png" />
-          <div class="flipkart-plus">  
-              <a href="flipkartplus-explore.html" id="explore">Explore</a>
-              <a href="flipkartplus-explore.html" id="plus">plus</a>
-              <a href="flipkartplus-explore.html" id="plus-logo">
+          <div class="navbar">
+            <div class="flipkart-logo">
+              <img src="images/flipkart-logo.png" />
+              <div class="flipkart-plus">
+                <a href="flipkartplus-explore.html" id="explore">Explore</a>
+                <a href="flipkartplus-explore.html" id="plus">plus</a>
+                <a href="flipkartplus-explore.html" id="plus-logo">
+                  <img
+                    src="images/flipkart-plus-logo.png"
+                    class="flipkart-plus-logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="left">
+              
+
+              <div class="search">
+
+
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search for products"
+                    />
                   
-            <img src="images/flipkart-plus-logo.png" class="flipkart-plus-logo">
-              </a>
-          </div>
-          </div>
-          <div class="search">
-            <input type="text" placeholder="Search.." name="search">
+
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="login-btn">
+                <a href="login.html">Login</a>
+              </div>
+
+              <div class="more dropdown">
+                <a href="more.html" class="dropbtn" id="drpbtn">
+                  
+                  <!-- More 
+                  <i class="fa fa-angle-down" aria-hidden="true"></i></a> -->
+                 
+                    
+                      More 
+                      <i class="fa fa-caret-down" id="fashion" aria-hidden="true"></i></a>
+                    <div class="dropdown-content">
+                    <a href="#">Notification Preferences</a>
+                    <a href="#">Sell On Flipkart</a>
+                    <a href="#">24*7 Customer Care</a>
+                    <a href="#">Advertise</a>
+                    <a href="#">Download App</a>  
+                  </div>
+                 
+
+
+              </div>
+
+              <div class="cart">
+                <a href="cart.html">
+                  
+                   <i class="fa fa-shopping-cart" aria-hidden="true">
+                  Cart
+                  </i>
+                  </a>
+              </div>
+            </div>
           </div>
         </div>
-    </div>
+     
+    </header>
+
+    <section id="top-items">
+      <div class="top-items-section">
+        <div class="container">
+          <div class="top-items-main">
+            <div class="top-item">
+              <img src="images/topoffers.png" />
+              <p class="item-text">Top offers</p>
+            </div>
+
+            <div class="top-item">
+              <img src="images/grocery.png" />
+              <p class="item-text">Graocery</p>
+            </div>
+
+            <div class="top-item">
+              <img src="images/mobiles.png" />
+              <p class="item-text">Mobiles</p>
+            </div>
+            <div class="top-item">
+              <img src="images/fashion.png" />
+              <!-- <p class="item-text">Fashion 
+              <span class="fa fa-angle-down" aria-hidden="true"></span></p> -->
+              <div class="dropdown">
+                <p class="dropbtn item-text" id="drpbtn">Fashion 
+                  <i class="fa fa-angle-down" id="fashion" aria-hidden="true"></i></p>
+                <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+                </div>
+
+
+            </div>
+            <div class="top-item">
+              <img src="images/laptops.png" />
+              <p class="item-text">laptops <span class="fa fa-angle-down" aria-hidden="true"></span></p>
+            </div>
+            <div class="top-item">
+              <img src="images/home.jpg" />
+              <p class="item-text">home <span class="fa fa-angle-down" aria-hidden="true"></span></p>
+            </div>
+            <div class="top-item">
+              <img src="images/appliances.png" />
+              <p class="item-text">Appliances <span class="fa fa-angle-down" aria-hidden="true"></span></p>
+            </div>
+            <div class="top-item">
+              <img src="images/travel.png" />
+              <p class="item-text">Travel </p>
+            </div>
+            <div class="top-item">
+              <img src="images/toys.png" />
+              
+
+              <p class="item-text">
+                Toys & more
+                <span class="fa fa-angle-down" aria-hidden="true"></span>
+              </p>
+
+
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section id="deals-of-the-day-section">
+      <div class="container">
+        <div class="deals-main">
+          <div class="deals-of-the-day">
+            <div class="title">
+              <div class="left">
+                <p>
+                  Deals of the day
+                  <img src="images/timer_deals.svg" id="timer-icon" />
+                  <span class="timer"> 22 : 07 : 36 Left</span>
+                </p>
+              </div>
+              <div class="right">
+                <a href="viewall.html">VIEW ALL</a>
+              </div>
+            </div>
+            <div class="deals">
+              <div class="deals-item">
+                <div class="deals-item-img">
+                  <img src="images/watches.jpeg" />
+                </div>
+                <div class="deals-text">
+                  <h4>Casio,Fastrack,Sonata</h4>
+                  <p>Upto 80%+Extra 10%Off</p>
+                  <span>Knockout Deals</span>
+                </div>
+              </div>
+
+              <div class="deals-item">
+                <div class="deals-item-img">
+                  <img src="images/perfumes.jpg" />
+                </div>
+                <div class="deals-text">
+                  <h4>Perfumes and Deos</h4>
+                  <p>Upto 50%</p>
+                  <span>Wild Stone, Nivea,Guess..</span>
+                </div>
+              </div>
+
+              <div class="deals-item">
+                <div class="deals-item-img">
+                  <img src="images/trimmers.jpeg" />
+                </div>
+                <div class="deals-text">
+                  <h4>Trimmers, Dryers..</h4>
+                  <p>Upto 50%</p>
+                  <span>Havells & Marie Clarie</span>
+                </div>
+              </div>
+
+              <div class="deals-item">
+                <div class="deals-item-img">
+                  <img src="images/bags.png" />
+                </div>
+                <div class="deals-text">
+                  <h4>Bags and Luggage</h4>
+                  <p>Upto 70%+Extra 5%Off</p>
+                  <span>Grab The Deal</span>
+                </div>
+              </div>
+
+              <div class="deals-item">
+                <div class="deals-item-img">
+                  <img src="images/shoes.jpeg" />
+                </div>
+
+                <div class="deals-text">
+                  <h4>Adidas, Reebok,..</h4>
+                  <p>Min 40%</p>
+                  <span>Sports Shoes & more</span>
+                </div>
+              </div>
+
+              <div class="deals-item">
+                <div class="deals-item-img">
+                  <img src="images/covers.jpg" />
+                </div>
+                <div class="deals-text">
+                  <h4>Desiner Back Covers..</h4>
+                  <p>Just $179</p>
+                  <span>For All Top Models</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="advertis">
+            <img src="images/adver.jpg" />
+          </div>
+        </div>
+        <!--container end-->
+      </div>
+    </section>
+
+    <section id="deals-of-the-day-section">
+      <div class="container">
+        <div class="deals-of-the-day" id="books-instru">
+          <div class="title">
+            <div class="left">
+              <p>Books And Music Instruments</p>
+              <h3>
+                Shop Now!
+              </h3>
+            </div>
+            <div class="right">
+              <a href="viewall.html">VIEW ALL</a>
+            </div>
+          </div>
+          <div class="deals">
+            <div class="deals-item">
+              <div class="deals-item-img">
+              <img src="images/book1.jpeg" /> </div>
+
+              <div class="deals-text">  
+              <h4>Exclusive collection of B..</h4>
+              <p>for JEE 2021</p>
+              <span>Shop Now!</span>
+              </div>
+            </div>
+
+            <div class="deals-item">
+              <div class="deals-item-img">
+              <img src="images/tablas.png" />
+              </div>
+              <div class="deals-text">
+              <h4>Tablas</h4>
+              <p>Upto 60% Off</p>
+              <span>Explore Now!</span>
+            </div>
+            </div>
+
+            <div class="deals-item">
+              <div class="deals-item-img">
+              <img src="images/ghunghroo.jpeg" />
+              </div>
+              <div class="deals-text">
+              <h4>Ghungroos</h4>
+              <p>Starting $249</p>
+              <span>Explore Now!</span>
+            </div>
+            </div>
+
+            <div class="deals-item">
+              <div class="deals-item-img">
+              <img src="images/book2.jpeg" />
+                </div>
+              <div class="deals-text">
+              <h4>Business & Economics B..</h4>
+              <p>Upto 70% Off</p>
+              <span>Peter Lynch, Sudhir Dixit..</span>
+            </div>
+            </div>
+
+            <div class="deals-item">
+              <div class="deals-item-img">
+              <img src="images/shoes.jpeg" />
+              </div>
+              <div class="deals-text">
+              <h4>Adidas, Reebok,..</h4>
+              <p>Min 40%</p>
+              <span>Sports Shoes & more</span>
+            </div>
+            </div>
+
+            <div class="deals-item">
+              <div class="deals-item-img">
+              <img src="images/wind-music.jpeg" />
+              </div>
+              <div class="deals-text">
+              <h4>Popular Wind Instruments</h4>
+              <p>Under $299</p>
+              <span>Mouth Organ, Flute & More</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
